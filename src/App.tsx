@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { FieldArray } from "./FieldArray";
 
 const App = () => {
   const {
@@ -19,6 +20,7 @@ const App = () => {
   const onSubmit = (data: any) => {
     console.log({ data });
   };
+
   return (
     <div className="App">
       <h1>react-hook-form</h1>
@@ -68,6 +70,7 @@ const App = () => {
         </div>
         <button type="submit">ログイン</button>
       </form>
+      <FieldArray />
     </div>
   );
 };
